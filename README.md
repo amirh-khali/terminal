@@ -1,4 +1,4 @@
-# [My Personal Website](https://amirh-khali.github.io/)
+# [My Personal Terminal](https://amirh-khali.github.io/terminal)
 
 A terminal style website that shows my projects, resume, contact infos and contains some basic terminal commands and easter eggs :D
 
