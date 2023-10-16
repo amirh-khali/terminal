@@ -1,7 +1,8 @@
+import packageJson from '../../../package.json';
 
 export const resume = async (args: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://github.com/AmirH-KHALI/amirh-khali.github.io/blob/master/docs/AmirH_CV.pdf');
+    window.open(packageJson.author.url);
   }, 1000);
 
   return 'Opening Resume...';

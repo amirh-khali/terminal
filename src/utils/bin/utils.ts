@@ -1,4 +1,5 @@
 import * as bin from './index';
+import packageJson from '../../../package.json';
 
 export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
@@ -17,6 +18,8 @@ export const help = async (args: string[]): Promise<string> => {
   projects  - list of my public projects on GitHub
   repo      - the repository of this beauty :D
   resume    - my CV in pdf
+
+  home      - back to the home page
   
   theme [arg] - use wide range of themes
   trex        - play t-rex without disconnection :D
@@ -68,10 +71,18 @@ export const koobs = async (args?: string[]): Promise<string> => {
 
 export const repo = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
-    window.open('https://github.com/AmirH-KHALI/amirh-khali.github.io');
+    window.open(packageJson.repository.url);
   }, 1000);
 
   return 'Opening repository...';
+};
+
+export const home = async (args?: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.location.replace(packageJson.author.url);
+  }, 1000);
+
+  return 'Redirecting to the home page...';
 };
 
 export const banner = (args?: string[]): string => {
@@ -84,7 +95,12 @@ export const banner = (args?: string[]): string => {
   ╚═╝  ╚═╝╚═╝╚═╝╚═╝
 
 - Who am I?
-Im Amirhossein Ahmadi, a former student of the Computer Olympiad, with a background as a Backend Developer (Spring, Django) and limited work in the field of Data Science.
+
+Hello there, This is Amirhossein Ahmadi.
+
+I have recently graduated with a B.S.c degree in Computer Engineering from the Iran University of Science and Technology (IUST).
+I'm also a former student of the Computer Olympiad, with a background as a Backend Developer (Spring, Django) and limited work in the field of Data Science.
+
 
 - How to work with this terminal?
 Type 'help' to see list of available commands.
