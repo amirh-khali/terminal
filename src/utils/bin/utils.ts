@@ -96,10 +96,8 @@ export const banner = (args?: string[]): string => {
 
 - Who am I?
 
-Hello there, This is Amirhossein Ahmadi.
-
-I have recently graduated with a B.S.c degree in Computer Engineering from the Iran University of Science and Technology (IUST).
-I'm also a former student of the Computer Olympiad, with a background as a Backend Developer (Spring, Django) and limited work in the field of Data Science.
+This is Amirhossein Ahmadi. A Software Engineer.👨‍💻
+Nice to meet you!
 
 
 - How to work with this terminal?
